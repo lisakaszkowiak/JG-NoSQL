@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>AroundMe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>AroundMe</h1>
+        </header>
+
+<div class="controls">
+    
+    <div class="input-group">
+        <input type="number" id="input-lat" placeholder="Latitude" value="48.8566" step="any">
+        <input type="number" id="input-lng" placeholder="Longitude" value="2.3522" step="any">
+    </div>
+
+    <button id="btn-search" class="btn-primary">
+        🔍 Rechercher ici
+    </button>
+
+    <div class="filters">
+        <select id="category-select">
+            <option value="">Toutes catégories</option>
+        </select>
+        
+        <select id="radius-select">
+            <option value="500">500 m</option>
+            <option value="1000" selected>1 km</option>
+            <option value="5000">5 km</option>
+        </select>
+    </div>
+    
+    <p id="status-msg">Prêt à chercher dans Paris.</p>
+</div>
+
+        <ul id="places-list" class="places-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
